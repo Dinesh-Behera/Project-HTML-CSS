@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Navigation bar :logo & img */
+#logo {
+  margin: 8px 16px;
+}
+
+#logo img {
+  width: 53px;
+  height: 53px;
+}
+
+/* Navigation bar :list styling */
+
+#navbar ul {
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#navbar li {
+  list-style: none;
+  font-size: 18px;
+}
+
+#navbar li a {
+  color: white;
+  padding: 5px 10px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#navbar li a:hover {
+  color: black;
+  background: white;
+}
+
+/* 1st section:home */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  padding: 5px 180px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url(images/img-1.webp) no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.90;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head h1 {
+  font-size: 2rem;
+  padding: 10px;
+  color: rgb(218, 46, 23);
+  text-align: center;
+  font-family: cursive;
+}
+
+.head img {
+  height: 3rem;
+  width: 15rem;
+}
+
+#home p {
+  font-size: 1.15rem;
+  color: rgb(9, 7, 128);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+  font-size: 18px;
+  background-color: rgb(190, 168, 181);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid white;
+  border-radius: 11px;
+  margin-top: 8px;
+  padding: 5px 8px;
+}
+
+.btn:hover {
+  background-color: rgb(104, 98, 102);
+}
+
+/* 2nd section:service */
+#service {
+  margin-top: 150px;
+}
+
+.h-primary {
+  font-size: 2rem;
+  padding: 10px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.h-secondary {
+  font-size: 1.55rem;
+  font-family: monospace;
+}
+
+.center {
+  text-align: center;
+}
+
+.services {
+  margin: 35px;
+  display: flex;
+}
+
+.box {
+  border: 2px solid red;
+  border: 2px solid red;
+  margin: 2px 5px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.box img {
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.box p {
+  font-size: 1.03rem;
+  padding: 5px;
+}
+
+/* 3rd section:client */
+
+#client {
+  height: 308px;
+  overflow: hidden;
+  /* display: flex; */
+}
+
+#client::before {
+  content: "";
+  position: absolute;
+  background: url(images/bg.jpeg) no-repeat center center/cover;
+  width: 100%;
+  height: 52%;
+  opacity: .5;
+  z-index: -1;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.clients img {
+  height: 120px;
+}
+
+.clients-item {
+  padding: 20px;
+}
+
+/* 4th section:contact */
+
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  background: url(images/contact.jpeg) no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 20px;
+}
+
+/* footer section */
+footer {
+  background: rgb(143, 134, 134);
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+}
